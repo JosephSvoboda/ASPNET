@@ -1,10 +1,13 @@
-﻿namespace Testing.Models
+﻿using System.Collections.Generic;
+
+namespace Testing.Models
 {
     public class Product
     {
         public Product()
         {
         }
+        public IEnumerable<Category> Categories { get; set; }
         public int ProductID { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
